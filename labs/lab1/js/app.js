@@ -1,20 +1,65 @@
 function setup() {
-    var backgroundC = "#4ebde6";
-    var startX = 30;
-
-    createCanvas(800,600);
+    var backgroundC = "#0080ff";
+    var backgroundCharacter = "#fff220";
+    var black = "#000"
+    var white = "#fff"
+    var fishcolor = "#de5337"
+    createCanvas(800,700);
 
     background(backgroundC);
 
-    fill(0, 200, 50)
-    rect(70, 60, 300, 50);
+    fill(backgroundCharacter)
+    circle(400, 200, 100);
+
+    fill(black)
+    circle(395, 220, 40);
+
+    fill(backgroundCharacter)
+    stroke(backgroundCharacter)
+    rect(350, 175, 100, 55)
+
+    fill(black)
+    circle(360, 180, 10);
+
+    fill(black)
+    circle(430, 180, 10);
+
+    stroke(2)
+    strokeWeight(8)
+    line(400, 300, 400, 500)
+
+    strokeWeight(8)
+    line(300, 380, 400, 350)
+
+    strokeWeight(8)
+    line(500, 290, 400, 350)
+
+    strokeWeight(8)
+    line(400, 500, 300, 600)
+
+    strokeWeight(8)
+    line(400, 500, 500, 600)
+
+    fill(white)
+    triangle(500, 100, 300, 100, 400, 50)
+
+    fill(black)
+    rect(325, 100, 150, 30)
+
+    strokeWeight(0)
+    fill(fishcolor)
+    ellipse(250, 380, 90, 30);
+
+    fill(fishcolor)
+    triangle(330, 400, 290, 380, 330, 360)
+
+    fill(black)
+    circle(230, 375, 3)
 
 
-    fill(214, 41, 67);
-    circle(100, 100, 30);
 
-    stroke(2);
-    line(startX,40,200,20);
+
+
     
 }
 
