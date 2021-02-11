@@ -2,21 +2,19 @@ function setup() {
     createCanvas(400, 300);
 }
 
-/*function draw() {
-    background(100);
-
-    noFill();
-
-    //for loop syntax
-    for(var i = 0; i < 15; i++) {
-        stroke(255 - (i * 15));
-        circle(200, i * 20, i * 5);
-    }
-    console.log("Afterwards: " + i);
-}*/
-
-
 function draw() {
+    noFill()
+    //for loop syntax
+    for(var i = 1; i < 26; i++) {
+        
+        stroke(0, 0, 0)
+        circle(200, 150, i * 5);
+
+    }
+}
+
+
+/*function draw() {
     background(100);
     noFill();
 
@@ -27,4 +25,4 @@ function draw() {
         stroke(255 - (i * 15));
         circle(200,150,i*10);
     }
-}
+}*/
