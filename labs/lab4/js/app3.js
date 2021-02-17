@@ -7,7 +7,7 @@ function setup() {
 
 function draw() {
 
-    background(50)
+    background("#64ed6c")
 
     console.log(xPos);
     console.log(yPos);
