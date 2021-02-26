@@ -35,30 +35,3 @@ function draw() {
     circle(xPos, yPos, 30);
 
 }
-
-
-
-/*function draw() {
-    background(100, 237, 108);
-    xPos = xPos + xSpeed;
-    yPos = yPos + ySpeed;
-
-    if(keyIsDown(LEFT_ARROW)) {
-        xSpeed = -1;
-    }
-
-    if(keyIsDown(RIGHT_ARROW)) {
-        xSpeed = 1;
-    }
-
-    if(keyIsDown(UP_ARROW)) {
-        ySpeed = -1;
-    }
-
-    if(keyIsDown(DOWN_ARROW)) {
-        ySpeed = 1;
-    }
-
-
-    circle(xPos, yPos, 30);
-}*/
