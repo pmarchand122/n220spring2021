@@ -1,12 +1,21 @@
-let unit01 = ["#765898", "#52D053", "#000000"];
+// let unit01 = ["#765898", "#52D053", "#000000"];
 
-function setup() {
-    createCanvas(800, 600);
+// function setup() {
+//     createCanvas(800, 600);
 
-    for (var i = 0; i < unit01.length; i++) {
+//     for (var i = 0; i < unit01.length; i++) {
       
-        fill(unit01[i]);
-        rect(200, 200 * i, 400, 200);
-    }
+//         fill(unit01[i]);
+//         rect(200, 200 * i, 400, 200);
+//     }
     
-}
+// }
+
+
+var x = 10;
+
+var y = 5;
+
+var z = x % y;
+
+console.log(z)
