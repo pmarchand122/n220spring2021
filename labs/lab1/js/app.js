@@ -15,7 +15,7 @@ function setup() {
     circle(395, 220, 40);
 
     fill(backgroundCharacter)
-    stroke(backgroundCharacter)
+    noStroke()
     rect(350, 175, 100, 55)
 
     fill(black)
@@ -28,16 +28,12 @@ function setup() {
     strokeWeight(8)
     line(400, 300, 400, 500)
 
-    strokeWeight(8)
     line(300, 380, 400, 350)
-
-    strokeWeight(8)
+ 
     line(500, 290, 400, 350)
 
-    strokeWeight(8)
     line(400, 500, 300, 600)
 
-    strokeWeight(8)
     line(400, 500, 500, 600)
 
     fill(white)

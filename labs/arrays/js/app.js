@@ -10,6 +10,17 @@ let teams = [
     { name: "Jazz", conference: "Western", seed: 1}
 ]
 
+let dvFortune = document.getElementById("dvFortune");
+
+
+function displayFortune() {
+    let fortunes = ["You will live forever", "Sike", "You goin be rich", "Balegde"]
+
+    var random = Math.floor(Math.random() * 4)
+    dvFortune.innerHTML = fortunes[random]
+    console.log(fortunes[random])
+}
+
 // //function breakString() {
 //     let sentence = txtExample.value;
     
@@ -68,11 +79,11 @@ let teams = [
     
 // }
 
-function displayTeam() {
+// function displayTeam() {
 
-    for (let i = 0; i < teams.length; i++){
-        let newTeam = document.createElement("div");
-        newTeam.innerHTML = "The " + teams[i].name + " in the " + teams[i].conference + " conference are the " + teams[i].seed + " seed";
-        dvFound.appendChild(newTeam)
-    }
-}
+//     for (let i = 0; i < teams.length; i++){
+//         let newTeam = document.createElement("div");
+//         newTeam.innerHTML = "The " + teams[i].name + " in the " + teams[i].conference + " conference are the " + teams[i].seed + " seed";
+//         dvFound.appendChild(newTeam)
+//     }
+// }

@@ -6,11 +6,13 @@ let ySpeed = 5;
 
 function setup(){
     createCanvas(800, 600);
+    background(100, 237 , 108);
+    
 }
 
 
 function draw() {
-    background(100, 237 , 108);
+    
     xPos = xPos + xSpeed;
     yPos = yPos + ySpeed;
 
@@ -32,6 +34,7 @@ function draw() {
     }
 
     fill("#ffad0a")
+    noStroke()
     circle(xPos, yPos, 30);
 
 }
