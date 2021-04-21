@@ -100,6 +100,5 @@ rgbDisplay.style.paddingTop = 50 + "px";
 rgbDisplay.style.fontSize = 20 + "px";
 rgbDisplay.innerHTML = "Current color: rgb(0,0,0)";
 
-app.style.backgroundColor = "beige";
 app.style.width = 800 + "px";
 app.style.margin = "auto";
