@@ -36,48 +36,25 @@ cards.style.height = 300 + "px";
 cards.style.justifyContent = "space-between";
 cards.style.margin = "auto";
 
+replay.style.marginRight = 300 + "px";
 
 
-replay.style.marginRight = 100 + "px";
-replay.style.paddingLeft = 490 + "px";
 
 let letterClicked = [];
-
-let letterSum = [];
 
 let cardSum = [];
 
 
 
-
 function flip(event){
-    // letterClicked.shift();
-
-    let letter1 = event.target.getAttribute("data-letter1");
-    let letter2 = event.target.getAttribute("data-letter2");
-
-    // letterClicked += letter;
-    // letterClicked.shift;
     
+    let letter = event.target.getAttribute("data-letter");
 
-    if(letter1){
-        event.target.innerHTML = letter1;
-        letterClicked.push(letter1)
-        letterSum.push(0)
-    }
-    if(letter2){
-        event.target.innerHTML = letter2;
-        letterClicked.push(letter2)
-        letterSum.push(1)
-    }
-
+    event.target.innerHTML = letter;
+    letterClicked.push(letter)
 
     if(letterClicked.length > 2){
         letterClicked.shift();
-    }
-
-    if(letterSum.length > 2){
-        letterSum.shift()
     }
 
     event.target.style.backgroundColor = "white";
@@ -86,8 +63,10 @@ function flip(event){
     event.target.style.color = "blue";
 
     
+
     
     setTimeout(function(){
+
         if(letterClicked[1] == letterClicked[0]){
             event.target.innerHTML = "";
             event.target.style.border = 2 + "px solid white";
@@ -110,6 +89,7 @@ function flip(event){
     }, 2000);
 
     
+
     
 }
 
