@@ -9,8 +9,16 @@ let card5= document.getElementById("card5");
 let card6= document.getElementById("card6");
 let card7= document.getElementById("card7");
 let card8= document.getElementById("card8");
+let card9= document.getElementById("card9");
+let card10= document.getElementById("card10");
+let card11= document.getElementById("card11");
+let card12= document.getElementById("card12");
+let card13= document.getElementById("card13");
+let card14= document.getElementById("card14");
+let card15= document.getElementById("card15");
+let card16= document.getElementById("card16");
 
-let cardPosition = [card1, card2, card3, card4, card5, card6, card7, card8];
+let cardPosition = [card1, card2, card3, card4, card5, card6, card7, card8, card9, card10, card11, card12, card13, card14, card15, card16];
 
 for (var i = 0; i < cardPosition.length; i++){
     cardPosition[i].style.width = 80 + "px";
@@ -84,7 +92,7 @@ function flip(event){
             event.target.innerHTML = "";
             event.target.style.border = 2 + "px solid white";
             cardSum.push(1);
-            if(cardSum.length > 7){
+            if(cardSum.length > 15){
                 let button = document.createElement("button");
                 button.style.width = 100 + "px";
                 button.style.height = 50 + "px";
